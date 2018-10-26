@@ -19,5 +19,5 @@ exports.createElement = str => {
   return el.firstElementChild
 }
 
-exports.getCode = (type, str) =>
+exports.getCode = (types, str) =>
   (str.match(new RegExp('```' + type + '([\\s\\S]*?)```')) || [])[1] || ''
